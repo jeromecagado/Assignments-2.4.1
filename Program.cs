@@ -11,8 +11,13 @@
             }
 
             int[] myArray = new int[value];
-            int sum = 0;
             Console.WriteLine($"\nInput {value} elements in the array.");
+            CalculateArraySum(myArray);
+        }
+
+        public static void CalculateArraySum(int[] myArray)
+        {
+            int sum = 0;
             for (int i = 0; i < myArray.Length; i++)
             {
                 Console.Write($"element - {i}: ");
